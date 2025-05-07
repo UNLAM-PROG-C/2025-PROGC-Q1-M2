@@ -18,7 +18,7 @@ public class Main {
         List<Process> cameras = new ArrayList<>();
         int id = 0;
         String command = "java";
-        String file_path = "TP1.Ejercicio_3.Camera";
+        String file_path = "Ejercicio_3.Camera";
         String frecuency = args[0], duration = args[1];
 
         for (String zone : zones) {
