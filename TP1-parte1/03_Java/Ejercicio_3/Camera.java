@@ -31,21 +31,33 @@ public class Camera {
 
     private void print_observation(int id, String zone, String event) {
         String msj = "Id: " + id + "\nZona: " + zone + "\nObservacion: " + event;
-        String[] lineas = msj.split("\n");
         String to_print = "";
+        int max_len = get_max_len(msj);
+        String borde = "-".repeat(max_len + 4);
+        to_print += borde + "\n";
+        to_print += formated_tex(msj, max_len);
+        to_print += borde;
+        System.out.println(to_print);
+    }
+
+    private String formated_tex(String msj, int max_len) {
+        String[] lineas = msj.split("\n");
+        String text = "";
+        for (String linea : lineas) {
+            text += "| " + String.format("%-" + max_len + "s", linea) + " |" + "\n";
+        }
+        return text;
+    }
+
+    private int get_max_len(String msj) {
+        String[] lineas = msj.split("\n");
         int max_len = 0;
         for (String linea : lineas) {
             if (linea.length() > max_len) {
                 max_len = linea.length();
             }
         }
-        String borde = "-".repeat(max_len + 4); // 2 espacios extras a cada lado
-        to_print += borde + "\n";
-        for (String linea : lineas) {
-            to_print += "| " + String.format("%-" + max_len + "s", linea) + " |" + "\n";
-        }
-        to_print += borde;
-        System.out.println(to_print);
+        return max_len;
     }
 
     public void start() {
