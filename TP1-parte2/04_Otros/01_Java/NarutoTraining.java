@@ -1,4 +1,5 @@
-public class NarutoTraining {
+public class NarutoTraining 
+{
     public static void create_start_threads(ShadowClone[] clones, Thread[] threads)
     {
         for (int i = 0; i < clones.length; i++)
@@ -17,7 +18,8 @@ public class NarutoTraining {
          }
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException 
+    {
         int cloneCount = Integer.parseInt(args[0]);
         ShadowClone[] clones = new ShadowClone[cloneCount];
         Thread[] threads = new Thread[cloneCount];
