@@ -1,6 +1,7 @@
 import java.util.Random;
 
-class ShadowClone implements Runnable {
+class ShadowClone implements Runnable 
+{
     private int id;
     private int chakra;
     private int gainedLevel;
