@@ -9,7 +9,8 @@
 
 using namespace std;
 
-struct Match{
+struct Match
+{
   unsigned int matchday = 0;
   Team* home;
   Team* away;
@@ -19,7 +20,8 @@ struct Match{
     : matchday(day), home(h), away(a) {}
 };
 
-class Tournament {
+class Tournament 
+{
   private:
     const int year;
 

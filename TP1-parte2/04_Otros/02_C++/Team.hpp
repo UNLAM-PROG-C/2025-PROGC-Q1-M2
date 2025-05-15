@@ -5,7 +5,8 @@
 
 using namespace std;
 
-class Team {
+class Team 
+{
   private:
     string name;
     unsigned int pj = 0, pg = 0, pe = 0, pp = 0, gf = 0, gc = 0;

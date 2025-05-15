@@ -13,7 +13,8 @@ void run_tournament_simulation(Tournament& tt, void(*simulation)(Tournament&))
   cout << " • Tiempo de ejecución: " << duration.count() << " segundos." << std::endl;
 }
 
-int main() {
+int main() 
+{
   srand(time(NULL));
   
   const int year = 1992;
@@ -45,7 +46,8 @@ int main() {
 
     cin >> option;
 
-    if (cin.fail()) {
+    if (cin.fail()) 
+    {
       cin.clear();
       cin.ignore(numeric_limits<streamsize>::max(), '\n');
       cout << "Entrada inválida. Intente nuevamente..." << endl;

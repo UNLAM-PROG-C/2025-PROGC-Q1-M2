@@ -6,7 +6,8 @@
 
 #include "Tournament.hpp"
 
-class Tournament_Simulator{
+class Tournament_Simulator
+{
   private:
     static void simulation_match(Match& match)
     {
@@ -80,8 +81,6 @@ class Tournament_Simulator{
   
     static void run_sequentially(Tournament& tournament)
     {
-      vector<thread> ths;
-
       for(size_t i = 0; i < tournament.fixture.size() / 2; i++)
       {
         for(Match& match : tournament.fixture[i])
@@ -92,6 +91,6 @@ class Tournament_Simulator{
         process_matchday(tournament, i);
       }
     }
-  };
+};
 
 #endif // TOURNAMENT_SIMULATOR_HPP
