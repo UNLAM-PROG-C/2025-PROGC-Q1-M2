@@ -1,36 +1,36 @@
 #include <iostream>
 #include <vector>
-#include "Planta.h"
-#include "Camionero.h"
+#include "Plant.h"
+#include "TruckDriver.h"
 
 int main(int argc, char const *argv[])
 {
-    Planta tapiales = Planta("Tapiales");
-    Planta fernandez = Planta("Fernandez");
-    Semaforo mutexViajes(1);
-    int viajes = 4;
-    int cantidad_camioneros = 4;
-    int tiempo_maximo = 0;
-    std::vector<Camionero> camioneros;
+    Plant tapiales = Plant("Tapiales");
+    Plant fernandez = Plant("Fernandez");
+    Semaphore tripMutex(1);
+    int trips = 4;
+    int drivers = 4;
+    int maxTime = 0;
+    std::vector<TruckDriver> truckDrivers;
 
-    for (int i = 0; i < cantidad_camioneros; ++i)
+    for (int i = 0; i < drivers; ++i)
     {
-        camioneros.emplace_back(i + 1, tapiales, fernandez, mutexViajes, viajes);
+        truckDrivers.emplace_back(i + 1, tapiales, fernandez, tripMutex, trips);
     }
 
-    for (auto &camionero : camioneros)
+    for (auto &truckDriver : truckDrivers)
     {
-        camionero.iniciar();
+        truckDriver.start();
     }
 
-    for (auto &camionero : camioneros)
+    for (auto &truckDriver : truckDrivers)
     {
-        camionero.esperar();
-        tiempo_maximo = std::max(tiempo_maximo, camionero.tiempo_total);
+        truckDriver.wait();
+        maxTime = std::max(maxTime, truckDriver.totalTime);
     }
 
-    int dias = tiempo_maximo / 24;
-    int horas = tiempo_maximo % 24;
-    std::cout << "Tiempo total para terminar todos los viajes: " << dias << " dias " << horas << " horas" << std::endl;
+    int days = maxTime / 24;
+    int hours = maxTime % 24;
+    std::cout << "Total time to complete all trips: " << days << " days " << hours << " hours" << std::endl;
     return 0;
 }

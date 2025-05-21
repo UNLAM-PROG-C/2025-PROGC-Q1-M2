@@ -6,7 +6,7 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wall -pthread
 
 # Archivos fuente y objeto
-SRC = main.cpp Camionero.cpp Planta.cpp Semaforo.cpp
+SRC = main.cpp TruckDriver.cpp Plant.cpp Semaphore.cpp
 OBJ = $(SRC:.cpp=.o)
 
 # Regla por defecto
