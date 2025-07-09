@@ -1,0 +1,47 @@
+user_id,user_name,title,type,genre
+1,ana_m,The Conjuring,Película,Terror
+1,ana_m,The Babadook,Película,Terror
+1,ana_m,Breaking Bad,Serie,Drama
+1,ana_m,Dark,Serie,Drama
+1,ana_m,Fargo,Serie,Drama
+1,ana_m,Friends,Serie,Comedia
+1,ana_m,The Big Bang Theory,Serie,Comedia
+1,ana_m,Superstore,Serie,Comedia
+1,ana_m,Community,Serie,Comedia
+1,ana_m,John Wick,Película,Acción
+1,ana_m,Taken,Película,Acción
+1,ana_m,Mad Max: Fury Road,Película,Acción
+2,carlos98,Insidious,Película,Terror
+2,carlos98,The Ring,Película,Terror
+2,carlos98,Paranormal Activity,Película,Terror
+2,carlos98,Ozark,Serie,Drama
+2,carlos98,The Crown,Serie,Drama
+2,carlos98,Peaky Blinders,Serie,Drama
+2,carlos98,Modern Family,Serie,Comedia
+2,carlos98,How I Met Your Mother,Serie,Comedia
+2,carlos98,Parks and Recreation,Serie,Comedia
+2,carlos98,The A-Team,Película,Acción
+2,carlos98,Speed,Película,Acción
+2,carlos98,The Equalizer,Película,Acción
+3,luna_smith,Midsommar,Película,Terror
+3,luna_smith,The Haunting of Hill House,Serie,Terror
+3,luna_smith,Sinister,Película,Terror
+3,luna_smith,This Is Us,Serie,Drama
+3,luna_smith,The Sopranos,Serie,Drama
+3,luna_smith,Brooklyn Nine-Nine,Serie,Comedia
+3,luna_smith,Unbreakable Kimmy Schmidt,Serie,Comedia
+3,luna_smith,New Girl,Serie,Comedia
+3,luna_smith,Die Hard,Película,Acción
+3,luna_smith,The Transporter,Película,Acción
+3,luna_smith,Gladiator,Película,Acción
+4,jorge_87,It Follows,Película,Terror
+4,jorge_87,Hush,Película,Terror
+4,jorge_87,The Grudge,Película,Terror
+4,jorge_87,Better Call Saul,Serie,Drama
+4,jorge_87,13 Reasons Why,Serie,Drama
+4,jorge_87,Suits,Serie,Drama
+4,jorge_87,Young Sheldon,Serie,Comedia
+4,jorge_87,The Office,Serie,Comedia
+4,jorge_87,The Expendables,Película,Acción
+4,jorge_87,Bad Boys,Película,Acción
+4,jorge_87,Mission Impossible,Película,Acción
